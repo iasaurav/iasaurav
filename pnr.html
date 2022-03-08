@@ -1,0 +1,58 @@
+<form id="atg-form">
+<input id="url" type="search"/>
+<input id="blank" type="checkbox"selected/>
+  <input id="text" type="text"/>
+  <input id="class" type="text"/>   
+<p id="output"></p>
+</form>
+   <script>
+    var form = document.querySelector('#atg-form');
+form.addEventListener('change', (e) => {
+
+  e.preventDefault();
+
+  var text = form.querySelector('#text').value;
+
+  var url = form.querySelector('#url').value;
+
+  var blank = form.querySelector('#blank').checked;
+
+  var cssClass = form.querySelector('#class').value;
+
+  var output = form.querySelector('#output');
+
+  var target = "";
+
+  var attrClass = "";
+
+  if (blank) {
+
+    target = 'target="_blank"';
+
+  }
+
+  
+
+  if (cssClass != '') {
+
+    attrClass = `class="${cssClass}"`;
+
+  }
+
+  var anchor = `
+<a href='https://ixigo.com/pnr-status-enquiry?pnr=${url}'>ixigo</a>
+<a href='https://whereismytrain.in/web/pnr/${url}'>whereismytrain</a>
+<a href='https://confirmtkt.com/mobile/pnr-status/${url}'>confirmtkt</a>
+<a href='https://paytm.com/train-tickets/pnr-enquiry/${url}'>paytm</a>
+<a href='https://makemytrip.com/railways/pnrsearch/?pnr=${url}'>makemytrip</a>
+  `;
+
+  output.innerHTML = anchor;
+
+  output.select();
+
+});
+    </script>
+
+<style>input[type=text]{opacity:0}</style>
+  

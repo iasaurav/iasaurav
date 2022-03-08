@@ -1,0 +1,100 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<form id="atg-form">
+  <input id="myUrl" type="search"/><button id="myBtn">Go</button>
+  <p id="output"></p>
+  <div>Embed code: <pre id="myCode"></pre></div>
+<input id="url" type="text">
+<input id="text" type="text"/>
+<input id="class" type="text"/>
+<input id="blank" type="text"/>
+</form>
+<script>
+  function getId(url) {
+    var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    var match = url.match(regExp);
+
+    if (match && match[2].length == 11) {
+        return match[2];
+    } else {
+        return 'error';
+    }
+}
+var myId;
+$('#myBtn').click(function () {
+    var myUrl = $('#myUrl').val();
+    url = getId(myUrl);
+    
+    $('#url').val(url);
+    
+    $('#myCode').html('<iframe width="560" height="315" src="//www.youtube.com/embed/' + url + '" frameborder="0" allowfullscreen></iframe>');
+});
+
+</script>
+<script>
+    var form = document.querySelector('#atg-form');
+
+form.addEventListener('submit', (e) => {
+
+  e.preventDefault();
+
+  var text = form.querySelector('#text').value;
+
+  var url = form.querySelector('#url'). value;
+
+  var blank = form.querySelector('#blank').checked;
+
+  var cssClass = form.querySelector('#class').value;
+
+  var output = form.querySelector('#output');
+
+  var target = "";
+
+  var attrClass = "";
+
+  if (blank) {
+
+    target = 'target="_blank"';
+
+  }
+
+  
+
+  if (cssClass != '') {
+
+    attrClass = `class="${cssClass}"`;
+
+  }
+
+  var anchor = `
+  <a href='https://www.youtube.com/results?search_query=${url}'${target}>Youtube-Search</a>
+<a href='https://music.youtube.com/search?q=${url}'${target}>Youtube-Music</a>
+<a href='https://music.youtube.com/watch?v=${url}'${target}>Youtube-Music</a>
+<a href='https://mp4api.ytjar.info/?id=${url}#'${target}>Youtube-Downloader</a>
+<a href='https://www.youtube.com/watch?app=desktop&v=${url}'${target}>Youtube-Desktop</a>
+
+
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  `;
+
+  output.innerHTML = anchor;
+
+  output.select();
+
+});
+    </script>
+
+<style>input[type=text]{opacity:0}</style>
+  
+  
+
+
+  

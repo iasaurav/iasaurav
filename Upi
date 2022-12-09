@@ -1,0 +1,22 @@
+/**
+ * Create a UPI QR Code for payments
+ *
+ * @param {29.99} amount The amount requested in INR
+ * @param {"xyz@upi"} merchant_upi UPI address of the merchant
+ * @param {"Blue Widgets"} merchant_name Full name of the payee
+ * @param {"250"} size The size of the QR image in pixels
+ * @return The QR Code
+ * @customfunction
+ */
+
+function UPI(amount, merchant_upi, merchant_name, size) {
+  if (amount.map) {
+    return amount.map(function (amount2) {
+      return UPI(amount2, merchant_upi, merchant_name, size);
+    });
+  }
+
+  const googleChart = `https://chart.googleapis.com/chart?cht=qr&choe=UTF-8`;
+  const upiData = `upi://pay?pn=${merchant_name}&pa=${merchant_upi}&am=${amount}`;
+  return `${googleChart}&chs=${size}x${size}&chl=${encodeURIComponent(upiData)}`;
+}

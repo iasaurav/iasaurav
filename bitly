@@ -1,0 +1,26 @@
+/**
+ * Create WhatsApp Click to Chat Link
+ *
+ * @param {string} phone The phone number with country code
+ * @param {string} message The text message
+ * @param {boolean} web Open the message in WhatsApp web?
+ * @return The pre-filled message link for WhatsApp.
+ * @customfunction
+ */
+function bity(phone, message, web) {
+  if (Array.isArray(phone)) {
+    return phone.map((row, index) => bity(row[0], message[index][0]), web);
+  }
+  const phoneNumber = (phone);
+  const Id = `https://api-ssl.bitly.com/v3/shorten?access_token=05d6a635a4e0c77d96ab81cd7c6b3ccdfde3025e&longUrl=`;
+
+const Ip = `&format=txt`;
+
+  return web === true
+    ? `${Id}${phoneNumber}${Ip}`
+    : `${Id}${phoneNumber}${Ip}`;
+}
+
+
+
+

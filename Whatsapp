@@ -1,0 +1,19 @@
+/**
+ * Create WhatsApp Click to Chat Link
+ *
+ * @param {string} phone The phone number with country code
+ * @param {string} message The text message
+ * @param {boolean} web Open the message in WhatsApp web?
+ * @return The pre-filled message link for WhatsApp.
+ * @customfunction
+ */
+function WHATSAPP(phone, message, web) {
+  if (Array.isArray(phone)) {
+    return phone.map((row, index) => WHATSAPP(row[0], message[index][0]), web);
+  }
+  const phoneNumber = String(phone).replace(/[^\d]/g, '');
+  const messageText = encodeURIComponent(message);
+  return web === true
+    ? `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${messageText}`
+    : `https://wa.me/${phoneNumber}?text=${messageText}`;
+}

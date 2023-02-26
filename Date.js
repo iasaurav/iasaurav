@@ -1,12 +1,11 @@
-<p id="demo"></p>
 
 <script>
 const d = new Date();
-document.getElementById("demo").innerHTML = d.toISOString().slice(0,4)+d.toISOString().slice(5,7)+d.toISOString().slice(8,10);
+document.getElementById("deo").innerHTML = d.toISOString().slice(0,4)+d.toISOString().slice(5,7)+d.toISOString().slice(8,10);
 </script>
 
 
-<p id="demo"></p>
+
 
 <script>
 const d = new Date();

@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 const d = new Date();
 let day = d.getDate();
 let year = d.getFullYear();

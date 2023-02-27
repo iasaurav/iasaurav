@@ -1,0 +1,11 @@
+function html(phone, web) {
+  if (Array.isArray(phone)) {
+    return phone.map((row, index) => html(row[0]), web);
+  }
+  const phoneNumber = String(phone).replace(/^(?:https?:\/\/)?(?:www\.)?/i, "");
+const link = message;
+  
+  return web === true
+    ? `<a href='//${phoneNumber}'target='_blank'>${link}</a>`
+    : `<a href='//${phoneNumber}'target='_blank'>${link}</a>`;
+}

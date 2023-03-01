@@ -1,7 +1,4 @@
-<div id='json'></div>
 
-<script>
-  
     var id='1vqLnaR5PgRkCdS4KBtrNhxUhIXoomoJGD_ui_yEDEDo';
 var gid = '303771903&single=true&range=C1:C12';
 
@@ -37,4 +34,4 @@ function myItems(jsonString){
 }
   
   
-  </script>
+ 

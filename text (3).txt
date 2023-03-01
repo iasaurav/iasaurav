@@ -1,11 +1,11 @@
-function html(phone, web) {
+function drive(phone, message, web) {
   if (Array.isArray(phone)) {
-    return phone.map((row, index) => html(row[0]), web);
+    return phone.map((row, index) => drive(row[0], message[index][0]), web);
   }
-  const phoneNumber = String(phone).replace(/^(?:https?:\/\/)?(?:www\.)?/i, "");
-const link = message;
-  
+  const link = phone;
+  let result = link.slice(32,-18);
+const message = messag;
   return web === true
-    ? `<a href='//${phoneNumber}'target='_blank'>${link}</a>`
-    : `<a href='//${phoneNumber}'target='_blank'>${link}</a>`;
+    ? `<a href='https://drive.google.com/uc?export=download&id=${result}'target='_blank'>${message}</a>`
+    : `<a href='https://drive.google.com/uc?export=download&id=${result}'target='_blank'>${message}</a>`;
 }

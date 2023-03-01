@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title></title>
+<b:skin></b:skin>
+<link rel="icon" type="image/png" href="" />
+</head>
+
+<b:section id="test"></b:section>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+#bookmark {
+  border-collapse: collapse;
+  width: 3500px;
+}
+#bookmark td,
+#custom th {
+  border: 1px solid black;
+
+  padding: 5px;
+}
+#bookmark th {
+  background-color: #ff5733;
+
+  border: 1px solid black;
+
+  color: white;
+
+  text-align: left;
+}

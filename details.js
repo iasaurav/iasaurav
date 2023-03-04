@@ -1,5 +1,5 @@
 var id='1vqLnaR5PgRkCdS4KBtrNhxUhIXoomoJGD_ui_yEDEDo';
-var gid = '20512574&single=true&range=b1:b6';
+var gid = '20512574&single=true&range=b1:b1';
 
 
 

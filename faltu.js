@@ -8,7 +8,7 @@ fetch(url)
   );
 function myItems(jsonString){
   var json = JSON.parse(jsonString);
-  var table = "<table id='custom'><thead><tr><th>Name</th><th>Mobile</th><th>Mobile</th><th>Mobile</th></tr></thead><tbody id='myTable'>"
+  var table = "<input id='myInput'><br><br><table id='custom'><thead><tr><th>Name</th><th>Mobile</th><th>Mobile</th><th>Mobile</th></tr></thead><tbody id='myTable'>"
   json.table.cols.forEach(colonne => table += '' + colonne.label + '')
   table += ''
   json.table.rows.forEach(ligne => {

@@ -10,49 +10,18 @@ function getId(url) {
 }
 
 var myId;
-
-    
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
   var form = document.querySelector('#atg-form');
 
 form.addEventListener('change', (e) => {
   e.preventDefault();
-  
- 
     var x = form.querySelector('#x').value;
     yt = getId(x);
     
     $('#yt').html(yt);
-    
-    
-  
-  
-  
-  
   var gp='https://pay.google.com/about/static_kcs/images/logos/footer-logo.svg';
   var pa='https://assetscdn1.paytm.com/images/catalog/category/5165/paytm_logo.png';
   var ma='https://download.logo.wine/logo/MobiKwik/MobiKwik-Logo.wine.png';
   var pp='https://mma.prnewswire.com/media/1607489/PhonePe_Logo.jpg?w=200';
-  
-  
-
-  
-  
-  
   var a = form.querySelector('#a').value;
   
   var blank = form.querySelector('#blank').checked;
@@ -251,41 +220,6 @@ function myItems(jsonString){
 }
   
   
-  
-  function myFunction() {
-  // Get the text field
-  var copyText = document.getElementById("a");
-
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
-
-   // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
-
- 
-}
-  
-  
-  
-  
-
-
-  
-  
-  
-  
-
-
-function myFunctionse() {
-
-  window.open('http://' + document.getElementById('y').value);
-
-}
-
-
-
-
 function myFunctionArtist() {
 
   window.open('https://www.google.com/search?q=wynk:' + document.getElementById('a').value);

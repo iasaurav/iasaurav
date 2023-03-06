@@ -282,3 +282,15 @@ function myFunctionse() {
   window.open('http://' + document.getElementById('y').value);
 
 }
+
+
+
+
+function myFunctionArtist() {
+
+  window.open('https://www.google.com/search?q=wynk:' + document.getElementById('a').value);
+
+}
+
+
+

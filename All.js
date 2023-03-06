@@ -53,7 +53,7 @@ form.addEventListener('change', (e) => {
   
   
   
-  
+  var a = form.querySelector('#a').value;
   
   var blank = form.querySelector('#blank').checked;
   var insurance = form.querySelector('#insurance').checked;
@@ -146,7 +146,7 @@ var ban = "";
   
   
   if (payment) {
-    ias = "</br></br><a href='https://www.google.com/search?q=" + x+"'target='_blank'>Google</a>"+"<a href='//mail.google.com/mail/u/0/?ui=2#search/before%3A2100%2F12%2F31 from: " + x+"'target='_blank'>Delete-Gmail</a>"+"<a href='//www.jiosaavn.com/search/" + x+"'target='_blank'><img src='//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6JBlX3S584At3T-e18TnuZs75cVMydybnkw&usqp=CAU'></a>";
+    ias = "</br></br><a href='https://www.google.com/search?q=" + x+"'target='_blank'>Google</a>"+"<a href='//mail.google.com/mail/u/0/?ui=2#search/before%3A2100%2F12%2F31 from: " + x+"'target='_blank'>Delete-Gmail</a>"+"<a href='https://www.google.com/search?q=jiosaavn: " + a+"'target='_blank'><img src='//encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6JBlX3S584At3T-e18TnuZs75cVMydybnkw&usqp=CAU'></a>";
   }
   
   if (expense) {

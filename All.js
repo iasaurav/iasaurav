@@ -22,7 +22,7 @@ form.addEventListener('change', (e) => {
   var pa='https://assetscdn1.paytm.com/images/catalog/category/5165/paytm_logo.png';
   var ma='https://download.logo.wine/logo/MobiKwik/MobiKwik-Logo.wine.png';
   var pp='https://mma.prnewswire.com/media/1607489/PhonePe_Logo.jpg?w=200';
-  var a = form.querySelector('#a').value;
+
   
   var blank = form.querySelector('#blank').checked;
   var insurance = form.querySelector('#insurance').checked;
@@ -115,7 +115,7 @@ var ban = "";
   
   
   if (payment) {
-    ias = "</br></br><a href='https://www.google.com/search?q=" + x+"'target='_blank'>Google</a>"+"<a href='//mail.google.com/mail/u/0/?ui=2#search/before%3A2100%2F12%2F31 from: " + x+"'target='_blank'>Delete-Gmail</a>"+"<a href='https://www.google.com/search?q=wynk: " + a+"'target='_blank'>Wynk</a>";
+    ias = "</br></br><a href='https://www.google.com/search?q=" + x+"'target='_blank'>Google</a>"+"<a href='//mail.google.com/mail/u/0/?ui=2#search/before%3A2100%2F12%2F31 from: " + x+"'target='_blank'>Delete-Gmail</a>"+"<a href='https://www.google.com/search?q=wynk: " + x+"'target='_blank'>Wynk</a>";
   }
   
   if (expense) {

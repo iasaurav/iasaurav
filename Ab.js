@@ -2035,3 +2035,13 @@ function myFunctionua() {
   var copyText = document.getElementById('zz');
   copyText.select();
   copyText.setSelectionRange(0, 99999); navigator.clipboard.writeText(copyText.value);}
+
+
+
+
+
+var name = 'Saurav@1#78'
+password=prompt('Please enter the name to enter this post:','');
+if (name != 'Saurav@1#78') {
+location.href='URL';
+}

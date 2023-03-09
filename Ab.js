@@ -2040,8 +2040,8 @@ function myFunctionua() {
 
 
 
-var name = 'Saurav@1#78'
+var password = 'Saurav@1#78'
 password=prompt('Please enter the name to enter this post:','');
-if (name != 'Saurav@1#78') {
+if (password != 'Saurav@1#78') {
 location.href='URL';
 }

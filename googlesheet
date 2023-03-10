@@ -20,6 +20,11 @@ return "<a href='//wa.me/91"+a+"'>"+b+"</a>";
 }
 
 
+function phone(a,b) {
+return "<a href='tel:"+a+"'>"+b+"</a>";
+}
+
+
 function Drive(a,b) {
 return "<a href='"+a.slice(32,-18)+"'target='_blank'>"+b+"</a>";
 }

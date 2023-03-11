@@ -1,0 +1,117 @@
+
+
+
+
+
+
+#custom {
+border-collapse: collapse;width:650px;}
+#custom td,#custom th  {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#custom th {
+  background-color: #F88379;
+  border: 1px solid black;
+  color: white;
+text-align:left;
+}
+
+
+
+
+
+
+#insurance {
+border-collapse: collapse;width:500px;}
+#insurance td,#insurance th  {
+  border: 1px solid black;
+  padding: 5px;
+}
+#insurance th {
+  background-color: #ff5733;
+  border: 1px solid black;
+  color: white;
+text-align:left;
+}
+
+#paylater {
+border-collapse: collapse;width:500px;}
+#paylater td,#paylater th  {
+  border: 1px solid black;
+  padding: 5px;
+}
+#paylater th {
+  background-color: #ff5733;
+  border: 1px solid black;
+  color: white;
+text-align:left;
+}
+
+#payment {
+border-collapse: collapse;width:1000px;}
+#payment td,#payment th  {
+  border: 1px solid black;
+  padding: 5px;
+}
+#payment th {
+  background-color: #ff5733;
+  border: 1px solid black;
+  color: white;
+text-align:left;
+}
+
+#card {
+border-collapse: collapse;width:1000px;}
+#card td,#card th  {
+  border: 1px solid black;
+  padding: 5px;
+}
+#card th {
+  background-color: #ff5733;
+  border: 1px solid black;
+  color: white;
+text-align:left;
+}
+
+
+
+
+input[type=text] {font-family: 'Comic Sans MS';font-size: 15px;
+  border: none;width:200px;
+  background-color: none;
+  outline:0;
+ 
+}
+
+
+
+#bookmark {
+border-collapse: collapse;width:1000px;}
+#bookmark td,#bookmark th  {
+  border: 1px solid black;
+  padding: 5px;
+}
+#bookmark th {
+  background-color: #ff5733;
+  border: 1px solid black;
+  color: white;
+text-align:left;
+}
+
+#post {
+border-collapse: collapse;width:3500px;}
+#post td,#post th  {
+  border: 1px solid black;
+  padding: 5px;
+}
+#post th {
+  background-color: #ff5733;
+  border: 1px solid black;
+  color: white;
+text-align:left;
+}
+
+  .b{box-sizing:border-box;height:30px;text-decoration:none;font-family:'Comic Sans MS';font-size:12px;width:90px;margin:8px0;box-sizing:border-box;
+  }

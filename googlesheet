@@ -43,6 +43,10 @@ return "<a href='paytmmp://pay?pa="+o+"&pn=saurav&am='>"+p+"</a>";
 
 
 
+function urlshortner(q) {
+return "https://tinyurl.com/api-create.php?url="+encodeURIComponent(a);
+}
+
 
 
 

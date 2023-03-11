@@ -58,6 +58,15 @@ function uri(phone, web) {
 }
 
 
+function TRANSLATE(input)
+{
+  var languageOutput = LanguageApp.translate(input, 'en', 'hi'); 
+  return languageOutput;
+
+}
+
+
+
 
 
 function shorter_URL(url) {

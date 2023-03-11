@@ -2,42 +2,42 @@ function anchor(a,b) {
 return "<a href='"+a+"'>"+b+"</a>";
 }
 
-function anchorb(a,b) {
-return "<a href='"+a+"'target='_blank'>"+b+"</a>";
+function anchorb(c,d) {
+return "<a href='"+c+"'target='_blank'>"+d+"</a>";
 }
 
-function option(a) {
-return "<option value='"+a+"'>";
+function option(e) {
+return "<option value='"+e+"'>";
 }
 
-function optionb(a,b) {
-return "<option value='"+a+"'>"+b+"</option>";
-}
-
-
-function WhatsApp(a,b) {
-return "<a href='//wa.me/91"+a+"'>"+b+"</a>";
+function optionb(f,g) {
+return "<option value='"+f+"'>"+g+"</option>";
 }
 
 
-function phone(a,b) {
-return "<a href='tel:"+a+"'>"+b+"</a>";
+function WhatsApp(h,i) {
+return "<a href='//wa.me/91"+h+"'>"+i+"</a>";
 }
 
 
-function Drive(a,b) {
-return "<a href='"+a.slice(32,-18)+"'target='_blank'>"+b+"</a>";
+function phone(j,k) {
+return "<a href='tel:"+j+"'>"+k+"</a>";
+}
+
+
+function Drive(l,m) {
+return "<a href='"+l.slice(32,-18)+"'target='_blank'>"+m+"</a>";
 }
 
 
 
 
-function playstore(a) {
-return "<a href='https://play.google.com/store/search?q="+encodeURIComponent(a)+"&=apps'>"+a+"</a>";
+function playstore(n) {
+return "<a href='https://play.google.com/store/search?q="+encodeURIComponent(n)+"&=apps'>"+n+"</a>";
 }
 
-function paytm(a,b) {
-return "<a href='paytmmp://pay?pa="+a+"&pn=saurav&am='>"+b+"</a>";
+function paytm(o,p) {
+return "<a href='paytmmp://pay?pa="+o+"&pn=saurav&am='>"+p+"</a>";
 }
 
 

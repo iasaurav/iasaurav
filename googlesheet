@@ -44,7 +44,7 @@ return "<a href='paytmmp://pay?pa="+o+"&pn=saurav&am='>"+p+"</a>";
 function upi(o,p) {
 let uri = "paytmmp://pay?pa="+o+"&pn=saurav&am=";
 let encoded = encodeURIComponent(uri);
-return "<a href='https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl="+uri+"'>"+p+"</a>";
+return "<a href='https://chart.googleapis.com/chart?chs=250x250&cht=qr&chl="+encoded+"'>"+p+"</a>";
 }
 
 

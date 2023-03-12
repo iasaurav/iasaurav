@@ -35,7 +35,7 @@ var email = "https://mail.google.com/mail/u/0/?ui=2#";
       var mail = $(this).val(); // get selected value
       let encoded = encodeURIComponent(mail);
       if (uri) { // require a URL
-        window.open(email + encoded); // redirect)
+        window.location(email + encoded); // redirect)
       }
       return false;
     });

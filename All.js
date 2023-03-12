@@ -1,3 +1,8 @@
+document.write("<form id='atg-form'>\r\n<div id=\"json\"><\/div>\r\n<\/form>");
+
+
+
+
 function getId(url) {
     var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
     var match = url.match(regExp);

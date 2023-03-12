@@ -31,7 +31,7 @@
 $(function() {
     // bind change event to select
     $('#mail').on('change', function() {
-var email = "https://mail.google.com/mail/u/0/?ui=2#search/";
+var email = "https://mail.google.com/mail/u/0/?ui=2#";
       var mail = $(this).val(); // get selected value
       let encoded = encodeURIComponent(mail);
       if (uri) { // require a URL

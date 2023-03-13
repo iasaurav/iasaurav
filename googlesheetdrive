@@ -1,0 +1,32 @@
+function getFiles() {
+            var ss = SpreadsheetApp.getActiveSpreadsheet();
+            ss.setActiveSheet(ss.getSheetByName("sheet2"));
+            var foldername = 'Shivani';                     // Replace your folder name here
+            
+            var folderlisting = 'listing of folder ' + foldername;
+            var ssparents = DriveApp.getFoldersByName(foldername)
+            var sheet = ss.getActiveSheet();
+ss.setActiveSheet(ss.getSheetByName("sheet2"));
+
+          // Enter the name to display the results in google sheet
+
+          var headers = [["File Name","File URL"]];
+
+          // Change here google sheet Range as per above header which is mentioned by you
+          sheet.getRange("A1:B").clear();
+          sheet.getRange("A1:B1").setValues(headers);
+          
+          // No need to change here.
+          var folder = ssparents.next();
+          var files = folder.getFiles();
+          var i=1;
+          while(files.hasNext()) {
+            var file = files.next();
+            if(ss.getId() == file.getId()){ 
+              continue; 
+            }
+
+            // enter carefully your headers name in below
+            sheet.getRange(i+1, 1, 1, 2).setValues([[file.getName(),file.getUrl()]]);
+            i++;
+          }

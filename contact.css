@@ -1,3 +1,22 @@
+#drive {
+border-collapse: collapse;width:650px;}
+#drive td,#drive th  {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#drive th {
+  background-color: #F88379;
+  border: 1px solid black;
+  color: white;
+text-align:left;
+}
+
+
+
+
+
+
 #custom {
 border-collapse: collapse;width:650px;}
 #custom td,#custom th  {

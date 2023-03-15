@@ -99,7 +99,7 @@ function paymenturl(o,url) {
         if (url == undefined) {
             throw 'url is empty or is not a valid url!'
         }
-        let content = UrlFetchApp.fetch('https://tinyurl.com/api-create.php?url=' + encodeURI("'paytmmp://pay?pa="+o+"&pn=saurav&am='"+url));
+        let content = UrlFetchApp.fetch('https://tinyurl.com/api-create.php?url=' + encodeURI("paytmmp://pay?pa="+o+"&pn=saurav&am="+url));
         if (content.getResponseCode() != 200) {
             return 'An error occured: [ ' + content.getContentText() + ' ]';
         }

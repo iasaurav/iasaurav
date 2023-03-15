@@ -92,3 +92,21 @@ function shorter_URL(url) {
         return 'An error occured: [ ' + e + ' ]';
     }
 }
+
+
+function paymenturl(o,url) {
+    try {
+        if (url == undefined) {
+            throw 'url is empty or is not a valid url!'
+        }
+        let content = UrlFetchApp.fetch('https://tinyurl.com/api-create.php?url=' + encodeURI("'paytmmp://pay?pa="+o+"&pn=saurav&am='"+url));
+        if (content.getResponseCode() != 200) {
+            return 'An error occured: [ ' + content.getContentText() + ' ]';
+        }
+        return content.getContentText();
+    } catch (e) {
+        return 'An error occured: [ ' + e + ' ]';
+    }
+}
+
+

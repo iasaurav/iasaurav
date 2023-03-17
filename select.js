@@ -32,8 +32,8 @@ var optio = ['Email','all','spam','trash'];
 // Optional: Clear all existing options first:
 sele.innerHTML = "";
 // Populate list with options:
-for(var b = 0; b < option.length; b++) {
-    var oa = option[b];
+for(var b = 0; b < optio.length; b++) {
+    var oa = optio[b];
     sele.innerHTML += "<option value=\"" + oa + "\">" + oa + "</option>";
 }
   

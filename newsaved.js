@@ -1,3 +1,4 @@
+document.write("<div id='json'><\/div>");
 var id='1n5RSc9jnxqKr_rcfCZ1Uci90CApBl0y2BDn_WHs8W8A';
 var gid = '876723839';
 var source='d201:d';
@@ -8,7 +9,7 @@ fetch(url)
   );
 function myItems(jsonString){
   var json = JSON.parse(jsonString);
-  var table = ""
+  var table = "</br></br>"
  json.table.cols.forEach(colonne => table += '' + colonne.label + "")
   table += ''
   json.table.rows.forEach(ligne => {
@@ -25,5 +26,5 @@ function myItems(jsonString){
   table += ''
   return table
 }
-  </script>
+ 
   

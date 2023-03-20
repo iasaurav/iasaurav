@@ -3,7 +3,7 @@ return "("+a+"', '"+b+"')";
 
 }
 
-function paytm (o, p, q) { let a "paytmmp://pay?pa="+o+ "&pn=" + p + "&am=" + q;
+function paytm (o, p, q) { let a= "paytmmp://pay?pa="+o+ "&pn=" + p + "&am=" + q;
  return "<a href="" + a + "'>" + p + "</a>";
 }
 function paytmb (o, p, q, r) { 
@@ -12,7 +12,7 @@ let qr= "https://chart.googleapis.com/chart?chs-250x250&cht=qr&chl="; return "<a
 } 
 
 function upiq(o, p, q) {
-let a "paytmmp://pay?pa="+o+ "&pn=" + p + "&am=" + q;
+let a="paytmmp://pay?pa="+o+ "&pn=" + p + "&am=" + q;
 let qr= "https://chart.googleapis.com/chart?chs-250x250&cht-qr&chl=";
 let encoded = qr + encodeURIComponent(a);
 return "<a href='" + encoded + "'>Upi-Qr</a>";

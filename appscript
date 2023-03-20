@@ -7,3 +7,17 @@ var sourceRang = shee.getRange(2,3);
   var destinationRange = sheet.getRange(2, 3, lastRo - 1, 1);
   sourceRang.autoFill(destinationRange, SpreadsheetApp.AutoFillSeries.DEFAULT_SERIES);
 }
+
+
+
+function specialconcat(input, delimiter) {
+   if (Array.isArray(input)) {
+      var data = '';
+      var delim = delimiter == undefined ? "" : delimiter
+      for (var i = 0; i < input.length; i++) {
+         data += input[i] + delim;
+      }
+      return delimiter == undefined ? data : data.substring(0, data.length - 1)
+   } else {
+      return input
+   }

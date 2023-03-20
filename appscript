@@ -1,0 +1,9 @@
+function autofil() {
+  var shee = SpreadsheetApp.getActive().getSheetByName("Sheet62");
+  var lastRo = shee.getLastRow();
+  var formula = "if(B2="","", optionb(B2,A2))";
+var sourceRang = shee.getRange(2,3);
+  sourceRang.setFormula(formula);
+  var destinationRange = sheet.getRange(2, 3, lastRo - 1, 1);
+  sourceRang.autoFill(destinationRange, SpreadsheetApp.AutoFillSeries.DEFAULT_SERIES);
+}

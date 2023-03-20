@@ -4,7 +4,7 @@ return "("+a+"', '"+b+"')";
 }
 
 function paytm (o, p, q) { let a= "paytmmp://pay?pa="+o+ "&pn=" + p + "&am=" + q;
- return "<a href="" + a + "'>" + p + "</a>";
+ return "<a href='" + a + "'>" + p + "</a>";
 }
 function paytmb (o, p, q, r) { 
 let b = "paytmmp://pay?pa=" + 0 + "@" + p + ".ifsc.npci&pn=" + q + "&am=" +r;
@@ -21,8 +21,7 @@ return "<a href='" + encoded + "'>Upi-Qr</a>";
 function bankq(o, p, q, r) {
 let b = "paytmmp://pay?pa="+o+ "@" + p + "&pn=" + q + "&am=" + r;
 let qr= "https://chart.googleapis.com/chart?chs-250x250&cht=qr&chl="; let encode = qr + encodeURIComponent(b);
-}
-return "<a href='" + encode + "'>Bank-Qr</a>";
+return "<a href='" + encode + "'>Bank-Qr</a>";}
 function anchor(a,b) {
 return "<a href='"+a+"'>"+b+"</a>";
 }

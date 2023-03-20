@@ -21,3 +21,14 @@ function specialconcat(input, delimiter) {
    } else {
       return input
    }
+
+
+
+function sortResponses() {
+var bank = SpreadsheetApp.getActive().getSheetByName("bank");
+var bookmark = SpreadsheetApp.getActive().getSheetByName("bookmark");
+var co = SpreadsheetApp.getActive().getSheetByName("co");
+co.sort(1, false);
+  bank.sort(1, false);
+bookmark.sort(1, false);
+}

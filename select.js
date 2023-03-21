@@ -1,4 +1,4 @@
-document.write("</br></br><select id=\"female\"> <\/select> <select id=\"male\"> <\/select> <select id=\"mail\"> <\/select>");
+document.write("<select id=\"female\"> <\/select> <select id=\"male\"> <\/select> <select id=\"mail\"> <\/select>");
 var select = document.getElementById("female"); 
 var options = ['Female Artist','Aastha-Gill','Akriti Kakar','Alka Yagnik','Anuradha Paudwal','Asees Kaur','Asha Bhosle','Chinmayi','Dhvani Bhanushali','Falguni Pathak','Hard Kaur','Harshdeep Kaur','Jasmine Sandlas','Jonita Gandhi','Jyotica Tangri','Kanika Kapoor','Lata Mangeshkar','Mahalakshmi Iyer','Mamta Sharma','Monali Thakur','Neeti Mohan','Neha Kakkar','Nikhita Gandhi','Palak Muchhal','Parampara Tandon','Rekha Bhardwaj','Shalmali Kholgade','Sharda Sinha','Shilpa Rao','Shirley Setia','Shreya Ghoshal','Shreya-Ghoshal','Shruti Pathak','Shweta Mohan','Shweta Pandit','Sona Mohapatra','Sonu Kakkar','Sunanda Sharma','Sunidhi Chauhan','Tulsi Kumar']; 
 

@@ -1,6 +1,5 @@
 document.write("<div id='json'><\/div>");
-    var id='1n5RSc9jnxqKr_rcfCZ1Uci90CApBl0y2BDn_WHs8W8A';
-var gid = '337814066';
+    var id='714339622';
 var source='c1:d';
 var url = 'https://docs.google.com/spreadsheets/d/'+id+'/gviz/tq?tqx=out:json&tq&gid='+gid+'&single=true&range='+source;
 fetch(url)

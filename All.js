@@ -1,4 +1,4 @@
-document.write("<\/br><\/br><\/br><\/br><form id=\"atg-form\">\r\n<div id='json'><\/div>\r\n<\/br><\/br><label><input type='checkbox' id='blank'\/>Phone-Apps<\/label>\r\n<label><input type='checkbox' id='insurance'\/>Train<\/label>\r\n<label><input type='checkbox' id='password'\/>Youtube<\/label>\r\n<label><input type='checkbox' id='netbanking'\/>Mobile-Recharge<\/label><\/br>\r\n<label><input type='checkbox' id='payment'\/>Search-Engine<\/label>\r\n<label><input type='checkbox' id='expense'\/>Upi-Qr<\/label>\r\n<label><input type='checkbox' id='bank'\/>Card<\/label>\r\n<label><input type='checkbox' id='debit'\/>Saurav<\/label>\r\n<label><input type='checkbox' id='credit'\/>Others<\/label><p id='output'><\/p>\r\n<\/form>");
+document.write("<\/br><\/br><\/br><\/br><form id=\"atg-form\">\r\n<div id='json'><\/div>\r\n<\/br><\/br><label><input type='checkbox' id='blank'\/>Phone-Apps<\/label>\r\n<label><input type='checkbox' id='insuranc'\/>Train<\/label>\r\n<label><input type='checkbox' id='password'\/>Youtube<\/label>\r\n<label><input type='checkbox' id='netbanking'\/>Mobile-Recharge<\/label><\/br>\r\n<label><input type='checkbox' id='payment'\/>Search-Engine<\/label>\r\n<label><input type='checkbox' id='expense'\/>Upi-Qr<\/label>\r\n<label><input type='checkbox' id='bank'\/>Card<\/label>\r\n<label><input type='checkbox' id='debit'\/>Saurav<\/label>\r\n<label><input type='checkbox' id='credit'\/>Others<\/label><p id='output'><\/p>\r\n<\/form>");
 function getId(url) {
     var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
     var match = url.match(regExp);
@@ -26,7 +26,7 @@ form.addEventListener('change', (e) => {
 
   
   var blank = form.querySelector('#blank').checked;
-  var insurance = form.querySelector('#insurance').checked;
+  var insuranc = form.querySelector('#insuranc').checked;
   
   var password = form.querySelector('#password').checked;
   var netbanking = form.querySelector('#netbanking').checked;
@@ -94,7 +94,7 @@ var ban = "";
 ;
   }
   
-  if (insurance) {
+  if (insuranc) {
     ias = "<a href='https://whereismytrain.in/web/pnr/" + x+"'>Pnr-Enquiry</a>"+"<a href='https://www.ixigo.com/pnr-status-enquiry?pnr=" + x+"'target='_blank'>Ixigo-Pnr</a>"+"<a href='https://www.confirmtkt.com/rbooking/seat-availability/"+x+"/2S,SL,3E,3A,2A,1A/GN/"+day+"-"+month+"-"+year+"'>Confirm-Tkt</a>"
 
     ;

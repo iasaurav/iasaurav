@@ -1,8 +1,4 @@
-document.write("<form id='atg-form'>\r\n<div id=\"json\"><\/div>\r\n<\/form>");
-
-
-
-
+document.write("<form id=\"atg-form\">\r\n<div id='json'><\/div>\r\n<\/br><\/br><label><input type='checkbox' id='blank'\/>Phone-Apps<\/label>\r\n<label><input type='checkbox' id='insurance'\/>Train<\/label>\r\n<label><input type='checkbox' id='password'\/>Youtube<\/label>\r\n<label><input type='checkbox' id='netbanking'\/>Mobile-Recharge<\/label><\/br>\r\n<label><input type='checkbox' id='payment'\/>Search-Engine<\/label>\r\n<label><input type='checkbox' id='expense'\/>Upi-Qr<\/label>\r\n<label><input type='checkbox' id='bank'\/>Card<\/label>\r\n<label><input type='checkbox' id='debit'\/>Saurav<\/label>\r\n<label><input type='checkbox' id='credit'\/>Others<\/label><p id='output'><\/p>\r\n<\/form>");
 function getId(url) {
     var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
     var match = url.match(regExp);

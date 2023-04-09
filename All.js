@@ -191,14 +191,7 @@ var ban = "";
 
   
     var id='1n5RSc9jnxqKr_rcfCZ1Uci90CApBl0y2BDn_WHs8W8A';
-var gid = '1088173221&single=true&range=C12:C12';
-
-  
-  
-  
-  
-  
-  
+var gid = '1088173221&single=true&range=A12:AF12';
 var url = 'https://docs.google.com/spreadsheets/d/'+id+'/gviz/tq?tqx=out:json&tq&gid='+gid;
 fetch(url)
   .then(response => response.text())
